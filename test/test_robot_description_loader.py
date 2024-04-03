@@ -58,4 +58,4 @@ def test_use_gazebo():
     rdl.use_gazebo = 'true'
     rdl.gz_control_config_package = 'sciurus17_description'
     rdl.gz_control_config_file_path = 'config/dummy_controllers.yaml'
-    assert 'ign_ros2_control/IgnitionSystem' in exec_load(rdl)
+    assert 'gz_ros2_control/GazeboSimSystem' in exec_load(rdl)
